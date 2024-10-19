@@ -1,0 +1,21 @@
+[package]
+name = "jwt-signer"
+version = { workspace = true }
+edition = { workspace = true }
+
+[[bin]]
+name = "jwt-signer-cli"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.1", features = ["derive"] }
+config = "0.13"
+jsonwebtoken.workspace = true
+jwt-signer-http = { path = "../http" }
+rand = "0.8"
+rsa = "0.8"
+serde_json = { workspace = true }
+serde = { workspace = true }
+tokio = { workspace = true }
+tracing-subscriber = "0.3"
+tracing = { workspace = true }

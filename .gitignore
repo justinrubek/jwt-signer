@@ -1,0 +1,11 @@
+result
+result*
+.direnv
+.pre-commit-config.yaml
+target
+
+.tmp
+.data
+
+secret.pem
+public.pem

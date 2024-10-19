@@ -1,0 +1,21 @@
+[package]
+name = "jwt-signer-http"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+argon2 = { version = "0.4.1", features = ["std"] }
+async-trait = "0.1.79"
+axum.workspace = true
+axum-extra = { workspace = true, features = ["typed-header"] }
+base64 = "0.21.0"
+hyper = "1.0"
+jsonwebtoken = { workspace = true }
+serde_json = "1.0.87"
+serde = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tower-http = { version = "0.5", features = ["fs", "cors"] }
+tower = { version = "0.4", features = ["util"] }
+tracing = { workspace = true }
+rsa = "0.9.6"
